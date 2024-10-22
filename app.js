@@ -41,7 +41,7 @@ function makeSong(song) {
     const source = document.createElement('source');
     source.src = song.song; 
 
-    // Corregir id de los botones para evitar conflicto
+    
     const forward = document.createElement('i');
     forward.classList.add('bx', 'bx-arrow-to-right');
     forward.id = 'TenMore-forward';
@@ -70,7 +70,7 @@ function makeSong(song) {
     nextBtn.classList.add('bx', 'bx-fast-forward');
     nextBtn.id = 'next';
 
-    // Añadir eventos corregidos
+    
     rewind.addEventListener('click', () => {
         audio.currentTime -= 10;
     });
@@ -104,7 +104,7 @@ function makeSong(song) {
         loadSong(playList[currentIndex]);
     });
 
-    // Actualizar appendChild con las variables correctas
+    
     container.appendChild(title);
     container.appendChild(contAlbum);
     contAlbum.appendChild(imgCard);
